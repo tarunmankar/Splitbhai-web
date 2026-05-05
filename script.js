@@ -8,6 +8,15 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Remove hash from URL on page load (useful when coming from other pages)
+window.addEventListener('load', () => {
+    if (window.location.hash) {
+        setTimeout(() => {
+            history.replaceState("", document.title, window.location.pathname + window.location.search);
+        }, 100);
+    }
+});
+
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
