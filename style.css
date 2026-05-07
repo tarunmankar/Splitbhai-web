@@ -226,6 +226,11 @@ nav {
     filter: brightness(1.1);
 }
 
+.btn-nav {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+}
+
 .btn-secondary {
     background: rgba(255, 255, 255, 0.03);
     color: var(--text-main);
