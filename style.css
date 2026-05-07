@@ -354,6 +354,15 @@ nav {
     margin-bottom: 1.5rem;
 }
 
+.cta-card p {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Footer */
 footer {
     padding: 6rem 0;
